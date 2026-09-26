@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>YathraGo Germany | Effortless Explorations</title>
+
+<meta name="description"
+content="YathraGo Germany — Explore Europe together. Paris 21 November 2026.">
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f8fc;
+    color:#102d52;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+    font:inherit;
+    cursor:pointer;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#082444;
+    color:white;
+    padding:12px 5%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow:0 3px 18px rgba(0,0,0,.15);
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.logo-area img{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+    background:white;
+    border-radius:9px;
+}
+
+.logo-gold{
+    color:#f5c44d;
+}
+
+.nav-links{
+    display:flex;
+    gap:24px;
+}
+
+.nav-links a{
+    color:white;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    color:#f5c44d;
+}
+
+/* HERO */
+
+.hero{
+    min-height:720px;
+    background:
+    linear-gradient(
+        rgba(5,30,57,.82),
+        rgba(5,30,57,.91)
+    ),
+    url("https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:70px 20px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero-logo{
+    width:180px;
+    max-width:70%;
+    background:white;
+    border-radius:18px;
+    padding:8px;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:clamp(44px,8vw,78px);
+    line-height:1;
+    margin-bottom:15px;
+}
+
+.hero-tagline{
+    font-size:26px;
+    color:#f5c44d;
+    font-style:italic;
+    margin-bottom:22px;
+}
+
+.hero p{
+    max-width:760px;
+    margin:auto;
+    color:#e7eff8;
+    font-size:18px;
+}
+
+.hero-buttons{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 24px;
+    border-radius:30px;
+    border:none;
+    font-weight:bold;
+    transition:.25s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-gold{
+    background:#f5c44d;
+    color:#102d52;
+}
+
+.btn-blue{
+    background:#123e70;
+    color:white;
+}
+
+.btn-outline{
+    border:2px solid white;
+    color:white;
+    background:transparent;
+}
+
+/* GENERAL */
+
+section{
+    padding:75px 5%;
+}
+
+.section-title{
+    text-align:center;
+    max-width:850px;
+    margin:0 auto 45px;
+}
+
+.section-title small{
+    display:block;
+    color:#d59e18;
+    font-weight:bold;
+    letter-spacing:3px;
+    margin-bottom:10px;
+}
+
+.section-title h2{
+    font-size:clamp(32px,5vw,48px);
+    margin-bottom:12px;
+}
+
+.section-title p{
+    color:#637488;
+}
+
+/* PARIS */
+
+.paris-card{
+    max-width:1100px;
+    margin:auto;
+    background:white;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 12px 40px rgba(20,50,85,.12);
+}
+
+.paris-photo{
+    min-height:380px;
+
+    background:
+    linear-gradient(
+        rgba(10,42,75,.2),
+        rgba(10,42,75,.5)
+    ),
+    url("https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+
+    display:flex;
+    align-items:flex-end;
+    padding:35px;
+    color:white;
+}
+
+.paris-photo h3{
+    font-size:52px;
+}
+
+.paris-content{
+    padding:38px;
+}
+
+.trip-label{
+    color:#d59e18;
+    font-weight:bold;
+    letter-spacing:3px;
+}
+
+.paris-content h3{
+    font-size:35px;
+    margin:8px 0;
+}
+
+.price{
+    display:inline-block;
+    background:#fff0b5;
+    padding:10px 20px;
+    border-radius:30px;
+    font-size:24px;
+    font-weight:bold;
+    margin:15px 0 20px;
+}
+
+.paris-description{
+    color:#607286;
+    font-size:17px;
+    margin-bottom:25px;
+}
+
+.trip-details{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    margin:25px 0;
+}
+
+.detail{
+    background:#f1f6fb;
+    padding:20px;
+    border-radius:18px;
+}
+
+.detail strong{
+    display:block;
+    margin-bottom:4px;
+}
+
+.detail span{
+    color:#637488;
+}
+
+/* ITINERARY */
+
+.itinerary{
+    max-width:850px;
+    margin:auto;
+}
+
+.route{
+    display:flex;
+    gap:18px;
+    padding:19px 0;
+    border-bottom:1px solid #dce5ee;
+}
+
+.route-number{
+    width:44px;
+    height:44px;
+    min-width:44px;
+    border-radius:50%;
+    background:#123e70;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+
+.route:last-child .route-number{
+    background:#f5c44d;
+    color:#102d52;
+}
+
+.route p{
+    color:#68798b;
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    max-width:1050px;
+    margin:auto;
+}
+
+.feature{
+    background:white;
+    border-radius:22px;
+    padding:28px;
+    box-shadow:0 7px 25px rgba(20,50,85,.08);
+    border-top:4px solid #f5c44d;
+}
+
+.feature-icon{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.feature p{
+    color:#68798b;
+}
+
+/* REGISTRATION */
+
+.registration{
+    background:#eaf2f9;
+}
+
+.register-box{
+    max-width:850px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:28px;
+    text-align:center;
+    box-shadow:0 10px 35px rgba(20,50,85,.1);
+}
+
+.register-box h3{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.register-box p{
+    color:#637488;
+    margin-bottom:25px;
+}
+
+.register-note{
+    margin-top:18px;
+    font-size:14px;
+    color:#718195;
+}
+
+/* PAYMENT */
+
+.payment{
+    background:#102d52;
+    color:white;
+}
+
+.payment-box{
+    max-width:850px;
+    margin:auto;
+}
+
+.payment-box h2{
+    color:#f5c44d;
+    margin-bottom:10px;
+}
+
+.payment-box > p{
+    color:#d9e5f0;
+}
+
+.bank-details{
+    background:rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:25px;
+    margin:25px 0;
+}
+
+.bank-row{
+    padding:12px 0;
+    border-bottom:1px solid rgba(255,255,255,.13);
+}
+
+.bank-row:last-child{
+    border:none;
+}
+
+.bank-row strong{
+    color:#f5c44d;
+}
+
+.payment-warning{
+    background:rgba(245,196,77,.12);
+    border-left:4px solid #f5c44d;
+    padding:18px;
+    border-radius:10px;
+    margin-bottom:25px;
+}
+
+/* WHATSAPP */
+
+.whatsapp-section{
+    text-align:center;
+    background:#eef5f9;
+}
+
+.whatsapp-box{
+    max-width:700px;
+    margin:auto;
+}
+
+.whatsapp-box p{
+    color:#637488;
+    margin:10px 0 22px;
+}
+
+/* AMSTERDAM */
+
+.amsterdam{
+    max-width:1000px;
+    margin:auto;
+
+    background:
+    linear-gradient(
+        rgba(7,39,70,.84),
+        rgba(7,39,70,.88)
+    ),
+    url("https://images.unsplash.com/photo-1534351590666-13e3e96b5017?auto=format&fit=crop&w=1600&q=85")
+    center/cover;
+
+    color:white;
+    text-align:center;
+    padding:60px 30px;
+    border-radius:30px;
+}
+
+.soon{
+    display:inline-block;
+    background:#f5c44d;
+    color:#102d52;
+    padding:9px 18px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.amsterdam h2{
+    font-size:44px;
+    margin:12px 0;
+}
+
+.amsterdam p{
+    max-width:700px;
+    margin:10px auto 20px;
+    color:#e2edf7;
+}
+
+/* TERMS */
+
+.terms{
+    max-width:950px;
+    margin:auto;
+    background:white;
+    padding:38px;
+    border-radius:25px;
+    box-shadow:0 8px 30px rgba(20,50,85,.07);
+}
+
+.terms h3{
+    margin:23px 0 7px;
+    color:#123e70;
+}
+
+.terms h3:first-child{
+    margin-top:0;
+}
+
+.terms p,
+.terms li{
+    color:#637488;
+}
+
+.terms ul{
+    padding-left:20px;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#edf4f9;
+}
+
+.contact-box{
+    max-width:850px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 8px 30px rgba(20,50,85,.08);
+}
+
+.contact-box p{
+    color:#637488;
+    margin-bottom:12px;
+}
+
+/* SHARE */
+
+.share{
+    background:#102d52;
+    color:white;
+    text-align:center;
+}
+
+.share h2{
+    font-size:40px;
+}
+
+.share p{
+    color:#d9e5f0;
+    margin:10px 0 25px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#061d38;
+    color:white;
+    text-align:center;
+    padding:40px 5%;
+}
+
+footer h3{
+    color:#f5c44d;
+}
+
+footer p{
+    color:#b6c6d7;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin:20px 0;
+}
+
+.footer-links a{
+    color:#dce7f1;
+    font-size:14px;
+}
+
+.copyright{
+    color:#8398ad;
+    font-size:13px;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    nav{
+        padding:10px 4%;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    section{
+        padding:55px 4%;
+    }
+
+    .hero{
+        min-height:680px;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .trip-details,
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .paris-photo{
+        min-height:250px;
+    }
+
+    .paris-photo h3{
+        font-size:38px;
+    }
+
+    .paris-content{
+        padding:25px;
+    }
+
+    .register-box{
+        padding:28px 20px;
+    }
+
+    .amsterdam h2{
+        font-size:34px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<a href="#home" class="logo-area">
+
+<img
+src="yathrago-logo.jpg"
+alt="YathraGo Germany Logo">
+
+<span>
+Yathra<span class="logo-gold">Go</span>
+</span>
+
+</a>
+
+<div class="nav-links">
+
+<a href="#trips">Trips</a>
+<a href="#paris">Paris</a>
+<a href="#register">Register</a>
+<a href="#payment">Payment</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<img
+src="yathrago-logo.jpg"
+alt="YathraGo Germany"
+class="hero-logo">
+
+<h1>
+Yathra<span class="logo-gold">Go</span> Germany
+</h1>
+
+<div class="hero-tagline">
+Effortless Explorations
+</div>
+
+<p>
+Travel together. Discover new places. Meet new people.
+Create unforgettable European memories with YathraGo Germany.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#paris" class="btn btn-gold">
+🇫🇷 Explore Paris
+</a>
+
+<a href="#register" class="btn btn-outline">
+Register Now
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- UPCOMING TRIPS -->
+
+<section id="trips">
+
+<div class="section-title">
+
+<small>UPCOMING TRIPS</small>
+
+<h2>Where Are We Going?</h2>
+
+<p>
+Join YathraGo Germany for memorable European journeys.
+</p>
+
+</div>
+
+
+<!-- PARIS -->
+
+<div class="paris-card" id="paris">
+
+<div class="paris-photo">
+
+<h3>🇫🇷 Paris</h3>
+
+</div>
+
+<div class="paris-content">
+
+<div class="trip-label">
+21 NOVEMBER 2026
+</div>
+
+<h3>Paris — City of Lights</h3>
+
+<div class="price">
+€110 per person
+</div>
+
+<p class="paris-description">
+
+Start your journey from
+<strong>Ulm at midnight on Friday,
+20 November 2026</strong>
+and spend an unforgettable day discovering Paris.
+
+Visit iconic Parisian landmarks including Notre-Dame,
+the Seine, the Louvre area, Champs-Élysées,
+Arc de Triomphe and Trocadéro, finishing the main
+sightseeing programme at the Eiffel Tower.
+
+Enjoy a group experience with a
+<strong>South Indian breakfast</strong>,
+a <strong>Malayalam-speaking driver</strong>
+and a <strong>Malayalam-speaking guide</strong>.
+
+</p>
+
+
+<div class="trip-details">
+
+<div class="detail">
+
+<strong>📅 Date</strong>
+
+<span>
+21 November 2026
+</span>
+
+</div>
+
+<div class="detail">
+
+<strong>🌙 Departure</strong>
+
+<span>
+Ulm • Midnight • 20 Nov
+</span>
+
+</div>
+
+<div class="detail">
+
+<strong>💶 Price</strong>
+
+<span>
+€110 per person
+</span>
+
+</div>
+
+</div>
+
+
+<a
+href="#register"
+class="btn btn-gold">
+
+REGISTER NOW
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ITINERARY -->
+
+<section>
+
+<div class="section-title">
+
+<small>PARIS</small>
+
+<h2>Discover Paris</h2>
+
+<p>
+Our planned main sightseeing route.
+</p>
+
+</div>
+
+
+<div class="itinerary">
+
+<div class="route">
+
+<div class="route-number">1</div>
+
+<div>
+
+<h3>⛪ Notre-Dame</h3>
+
+<p>
+Begin your Paris sightseeing in the historic heart of the city.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="route">
+
+<div class="route-number">2</div>
+
+<div>
+
+<h3>🌊 Seine & Île de la Cité</h3>
+
+<p>
+Explore the beautiful river and historic surroundings.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="route">
+
+<div class="route-number">3</div>
+
+<div>
+
+<h3>🖼️ Louvre Area</h3>
+
+<p>
+Discover the famous Louvre and surrounding central Paris.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="route">
+
+<div class="route-number">4</div>
+
+<div>
+
+<h3>🛍️ Champs-Élysées</h3>
+
+<p>
+Experience one of Paris's most famous avenues.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="route">
+
+<div class="route-number">5</div>
+
+<div>
+
+<h3>🏛️ Arc de Triomphe</h3>
+
+<p>
+Stop for sightseeing and photographs.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="route">
+
+<div class="route-number">6</div>
+
+<div>
+
+<h3>📸 Trocadéro</h3>
+
+<p>
+Enjoy one of the classic views towards the Eiffel Tower.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="route">
+
+<div class="route-number">7</div>
+
+<div>
+
+<h3>🗼 Eiffel Tower</h3>
+
+<p>
+The Eiffel Tower is the final main sightseeing stop.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section>
+
+<div class="section-title">
+
+<small>YOUR EXPERIENCE</small>
+
+<h2>Travel With Us</h2>
+
+</div>
+
+
+<div class="features">
+
+<div class="feature">
+
+<div class="feature-icon">🍛</div>
+
+<h3>South Indian Breakfast</h3>
+
+<p>
+Enjoy a South Indian breakfast as part of the journey.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">🗣️</div>
+
+<h3>Malayalam-Speaking Driver</h3>
+
+<p>
+Travel with a Malayalam-speaking driver for easier communication.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">🧭</div>
+
+<h3>Malayalam Guide</h3>
+
+<p>
+Enjoy sightseeing assistance with a Malayalam-speaking guide.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- REGISTER -->
+
+<section class="registration" id="register">
+
+<div class="section-title">
+
+<small>PARIS REGISTRATION</small>
+
+<h2>Ready for Paris?</h2>
+
+<p>
+Complete your registration using our official registration form.
+</p>
+
+</div>
+
+
+<div class="register-box">
+
+<h3>🇫🇷 Paris — €110</h3>
+
+<p>
+21 November 2026<br>
+Departure from Ulm at midnight on 20 November.
+</p>
+
+<a
+href="https://forms.cloud.microsoft/r/U9EHR7jcQT"
+target="_blank"
+rel="noopener noreferrer"
+class="btn btn-gold">
+
+📝 REGISTER NOW
+
+</a>
+
+<div class="register-note">
+
+The registration form will open in a new tab.
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PAYMENT -->
+
+<section class="payment" id="payment">
+
+<div class="payment-box">
+
+<h2>💳 Payment Information</h2>
+
+<p>
+The Paris trip price is <strong>€110 per person</strong>.
+After completing your registration, please make your payment
+using the bank details below.
+</p>
+
+
+<div class="bank-details">
+
+<div class="bank-row">
+
+<strong>Account Holder</strong>
+
+<br>
+
+Devichandana K C
+
+</div>
+
+
+<div class="bank-row">
+
+<strong>IBAN</strong>
+
+<br>
+
+DE71100101780592562684
+
+</div>
+
+
+<div class="bank-row">
+
+<strong>BIC / SWIFT</strong>
+
+<br>
+
+REVODEB2
+
+</div>
+
+
+<div class="bank-row">
+
+<strong>Payment Reference</strong>
+
+<br>
+
+PARIS + YOUR NAME
+
+</div>
+
+</div>
+
+
+<div class="payment-warning">
+
+<strong>Important:</strong>
+
+After completing your payment, please send your payment
+confirmation/screenshot to our WhatsApp number.
+
+</div>
+
+
+<a
+href="https://wa.me/491605452917?text=Hello%20YathraGo%20Germany%2C%20I%20have%20completed%20my%20Paris%20trip%20payment.%20I%20am%20sending%20my%20payment%20screenshot."
+target="_blank"
+rel="noopener noreferrer"
+class="btn btn-gold">
+
+📲 SEND PAYMENT SCREENSHOT
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- WHATSAPP -->
+
+<section class="whatsapp-section">
+
+<div class="whatsapp-box">
+
+<h2>Need Help?</h2>
+
+<p>
+Have a question about the Paris trip or registration?
+Contact YathraGo Germany on WhatsApp.
+</p>
+
+<a
+href="https://wa.me/491605452917"
+target="_blank"
+rel="noopener noreferrer"
+class="btn btn-blue">
+
+💬 WhatsApp YathraGo Germany
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- AMSTERDAM -->
+
+<section>
+
+<div class="amsterdam">
+
+<span class="soon">
+DECEMBER 2026
+</span>
+
+<h2>🇳🇱 Amsterdam</h2>
+
+<p>
+Christmas atmosphere, beautiful canals and another
+unforgettable European Yathra.
+</p>
+
+<p>
+<strong>Registration available soon.</strong>
+</p>
+
+<button
+class="btn btn-gold"
+onclick="alert('Amsterdam registration will be available soon!')">
+
+🔔 Coming Soon
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- TERMS -->
+
+<section id="terms">
+
+<div class="section-title">
+
+<small>IMPORTANT INFORMATION</small>
+
+<h2>Trip Terms & Conditions</h2>
+
+</div>
+
+
+<div class="terms">
+
+<h3>1. Minimum Participants</h3>
+
+<p>
+The trip requires a minimum of 40 confirmed participants.
+If the minimum number is not reached, YathraGo Germany
+reserves the right to cancel or reschedule the trip.
+</p>
+
+
+<h3>2. No-Refund Policy</h3>
+
+<p>
+Payments for confirmed bookings are non-refundable in cases
+such as participant cancellation, personal plans changing,
+late arrival, missing the departure or choosing not to
+participate. Any exception applies only where required by
+applicable law.
+</p>
+
+
+<h3>3. Organiser's Rights</h3>
+
+<p>
+The organiser reserves the right to make reasonable changes
+to the route, itinerary, timing, sightseeing schedule or
+other arrangements when necessary because of traffic,
+weather, road conditions, operational requirements or
+other circumstances.
+</p>
+
+
+<h3>4. Cancellation or Rescheduling</h3>
+
+<p>
+YathraGo Germany may cancel or reschedule the trip when
+necessary, including where the minimum number of participants
+is not reached or circumstances make the planned trip
+impractical or unsafe.
+</p>
+
+
+<h3>5. Behaviour and Violence</h3>
+
+<p>
+All participants must behave respectfully towards other
+participants, the driver, guide, organisers and members of
+the public.
+</p>
+
+<p>
+<strong>
+Violence, threats, harassment, intimidation, abusive
+behaviour, discrimination, vandalism or seriously disruptive
+behaviour will not be tolerated.
+</strong>
+</p>
+
+
+<h3>6. Safety</h3>
+
+<p>
+Participants must follow reasonable safety instructions
+given by the driver, guide or organiser.
+</p>
+
+
+<h3>7. Timings</h3>
+
+<p>
+Participants must arrive at the agreed departure point on
+time. The bus may not be able to wait for participants
+who arrive late.
+</p>
+
+
+<h3>8. Personal Belongings</h3>
+
+<p>
+Participants are responsible for their own passports,
+identification documents, money, phones, luggage and
+other personal belongings.
+</p>
+
+
+<h3>9. Travel Documents</h3>
+
+<p>
+Each participant is responsible for carrying valid
+identification and any other documents required for
+their journey.
+</p>
+
+
+<h3>10. Unforeseen Circumstances</h3>
+
+<p>
+The itinerary may need to change because of severe weather,
+traffic, road closures, accidents, strikes, government
+restrictions or other circumstances outside the organiser's
+reasonable control.
+</p>
+
+
+<h3>11. Acceptance</h3>
+
+<p>
+By registering for a YathraGo Germany trip, participants
+confirm that they have read and understood these terms and
+agree to follow them.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- PRIVACY -->
+
+<section id="privacy">
+
+<div class="section-title">
+
+<small>YOUR PRIVACY</small>
+
+<h2>Privacy Policy</h2>
+
+</div>
+
+
+<div class="terms">
+
+<h3>Information We Collect</h3>
+
+<p>
+We may collect information such as your name, email address,
+telephone or WhatsApp number, number of travellers, booking
+information, payment confirmation and messages you send us.
+</p>
+
+
+<h3>How We Use Information</h3>
+
+<p>
+We use your information to process registrations, manage
+bookings, communicate trip information, answer enquiries,
+confirm payments and organise the trip.
+</p>
+
+
+<h3>Microsoft Forms</h3>
+
+<p>
+Our registration uses Microsoft Forms. Information submitted
+through the registration form may be processed by Microsoft
+according to Microsoft's applicable terms and privacy policies.
+</p>
+
+
+<h3>Payment Information</h3>
+
+<p>
+We do not request online banking passwords, PINs or other
+confidential banking credentials. Payment confirmation
+screenshots may be retained for booking administration.
+</p>
+
+
+<h3>WhatsApp</h3>
+
+<p>
+We may use WhatsApp for customer communication and payment
+confirmation. WhatsApp/Meta may process information according
+to its applicable privacy policies.
+</p>
+
+
+<h3>Sharing Information</h3>
+
+<p>
+We do not sell or rent your personal information. Necessary
+information may be shared with service providers involved
+in providing the trip where required to deliver the service
+or where required by law.
+</p>
+
+
+<h3>Data Security</h3>
+
+<p>
+We take reasonable measures to protect personal information
+against unauthorised access, loss, misuse or disclosure.
+</p>
+
+
+<h3>Your Rights</h3>
+
+<p>
+Depending on applicable law, you may have rights concerning
+access, correction, deletion, restriction or objection
+regarding your personal information.
+</p>
+
+
+<h3>Third-Party Websites</h3>
+
+<p>
+Our website may contain links to Microsoft, WhatsApp,
+Instagram and other third-party services. Their own privacy
+policies apply to information processed by those services.
+</p>
+
+
+<h3>Contact</h3>
+
+<p>
+
+<strong>YathraGo Germany</strong>
+
+<br>
+
+Email:
+devichandanak3@gmail.com
+
+<br>
+
+WhatsApp:
++49 160 5452917
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="section-title">
+
+<small>CONTACT</small>
+
+<h2>Contact YathraGo Germany</h2>
+
+</div>
+
+
+<div class="contact-box">
+
+<h3>📲 WhatsApp</h3>
+
+<p>
++49 160 5452917
+</p>
+
+<h3>📧 Email</h3>
+
+<p>
+devichandanak3@gmail.com
+</p>
+
+<a
+href="https://wa.me/491605452917"
+target="_blank"
+rel="noopener noreferrer"
+class="btn btn-blue">
+
+Contact on WhatsApp
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- SHARE -->
+
+<section class="share">
+
+<h2>
+Share Your Yathra 🌍
+</h2>
+
+<p>
+Know someone who would love to travel to Paris?
+Share YathraGo Germany.
+</p>
+
+<button
+class="btn btn-gold"
+onclick="shareWebsite()">
+
+📤 Share Website
+
+</button>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>
+YathraGo Germany
+</h3>
+
+<p>
+Effortless Explorations
+</p>
+
+
+<div class="footer-links">
+
+<a href="#home">Home</a>
+<a href="#trips">Trips</a>
+<a href="#paris">Paris</a>
+<a href="#register">Register</a>
+<a href="#payment">Payment</a>
+<a href="#terms">Trip Terms</a>
+<a href="#privacy">Privacy Policy</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 YathraGo Germany. All rights reserved.
+
+</div>
+
+</footer>
+
+
+<script>
+
+async function shareWebsite(){
+
+    const shareData = {
+
+        title:
+        "YathraGo Germany",
+
+        text:
+        "Join YathraGo Germany for our Paris trip on 21 November 2026.",
+
+        url:
+        window.location.href
+    };
+
+
+    if(navigator.share){
+
+        try{
+
+            await navigator.share(shareData);
+
+        }catch(error){
+
+            // Sharing cancelled by user.
+
+        }
+
+    }else{
+
+        try{
+
+            await navigator.clipboard.writeText(
+                window.location.href
+            );
+
+            alert(
+                "Website link copied. You can now share it on Instagram or WhatsApp."
+            );
+
+        }catch(error){
+
+            alert(
+                "Copy your website address from the browser and share it."
+            );
+
+        }
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
